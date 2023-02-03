@@ -8,3 +8,21 @@ def minimum(arr):
 
 def maximum(arr):
     return max(arr)
+
+# option 2
+
+
+def min(arr):
+    low = arr[0]
+    for i in arr[1:]:
+        if i < low:
+            low = i
+    return low
+
+
+def max(arr):
+    high = arr[0]
+    for i in arr[1:]:
+        if i > high:
+            high = i
+    return high
